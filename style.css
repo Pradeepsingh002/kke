@@ -13,20 +13,6 @@
   flex-direction: column;
   background: #1c2023;
 }
-.logo {
-  width: 82px;
-  height: 68px;
-  font-size: 12px;
-  text-align: center;
-  background: #ffffff;
-  position: sticky;
-  bottom: 105px;
-  left: 95%;
-  z-index: 0;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  box-shadow: -1px -1px 5px 0.5px gray;
-}
 .nav-1 {
   width: 100%;
   height: auto;
@@ -109,7 +95,6 @@
   height: auto;
   position: relative;
   z-index: 5;
-
   background-color: #00897a;
 }
 .container-bg img {
@@ -186,6 +171,7 @@
   width: 40%;
   height: 40vh;
   border-bottom: 1px solid gray;
+  position: relative;
 }
 .container-2 {
   width: 100%;
@@ -230,7 +216,9 @@
 }
 .cards {
   width: 30%;
-  height: 88vh;
+  /* height: 88vh; */
+  height: auto;
+  padding-block: 1%;
   text-align: center;
   border: 1px solid rgb(227, 225, 225);
   background: white;
@@ -518,10 +506,27 @@
 .footer h5 a:hover {
   color: white;
 }
+.logo {
+  width: 82px;
+  height: 68px;
+  font-size: 12px;
+  text-align: center;
+  background: #ffffff;
+  position: sticky;
+  bottom: 105px;
+  left: 95%;
+  z-index: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: -1px -1px 5px 0.5px gray;
+}
 
 /* MAKE RESPONSIVE */
 
 @media (max-width: 768px) {
+  .main {
+    background: white;
+  }
   .nav-1 {
     display: none;
   }
@@ -567,6 +572,7 @@
     width: 100%;
     height: auto;
     padding-block: 5%;
+    border: none;
   }
   .container-2 {
     padding-block: 5%;
@@ -585,6 +591,7 @@
     width: 100%;
     height: auto;
     margin-top: 20%;
+    padding-bottom: 2%;
   }
   .container-4 {
     flex-direction: column;
@@ -627,6 +634,9 @@
     width: 100%;
     border-bottom: 1px solid rgb(216, 212, 212);
   }
+  .curv-img {
+    display: none;
+  }
   .black-container {
     padding-left: 3%;
     flex-direction: column;
@@ -647,9 +657,13 @@
   .footer {
     flex-direction: column;
     padding-inline: 3%;
+    padding-block: 2%;
   }
   .footer .IMG {
     flex-direction: column;
     padding-block: 5%;
+  }
+  .logo {
+    display: none;
   }
 }
